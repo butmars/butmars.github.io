@@ -3,34 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Stein, saks, papir</title>
-    <link rel=stylesheet" href="stil.css">
+    <link rel="stylesheet" href="stil.css">
 </head>
 <body>
     <h2> Stein, saks, papir </h2>
+    <p id="mld"> </p>
+    <button>
+        <img src="bilder/borb.png" width="200" height="200" id="valgStein">
+    </button>
+    <button>
+        <img src="bilder/sits%20down.png" width="200" height="200" id="valgSaks">
+    </button>
+    <button>
+        <img src="bilder/teehe.jpg" width="200" height="200"  id="valgPapir">
+    </button>
 
-        <button>
-        <img src="bilder/borb.png" width="200" height="200" id="valgStein"/>
-        </button>
-        <button>
-        <img src="bilder/sits%20down.png" width="200" height="200" id="valgSaks"/>
-        </button>
-        <button>
-        <img src="bilder/teehe.jpg" width="200" height="200"  id="valgPapir"/>
-        </button>
-
-
+    <p id="Resultat">rrr</p>
 
 
     <script>
 
         var valgStein = document.getElementById("valgStein");
-        var valgSaks = document.getElementById("valgSaks");
         var valgPapir = document.getElementById("valgPapir");
-
+        var valgSaks = document.getElementById("valgSaks");
+        var Resultat = document.getElementById("Resultat");
 
 
         valgStein.onclick = function () {
-        }
+            document.getElementById("mld").innerHTML = "Du har valgt stein.";
+        };
+        valgSaks.onclick = function () {
+            document.getElementById("mld").innerHTML ="Du har valgt saks.";
+        };
+        valgPapir.onclick = function () {
+            document.getElementById("mld").innerHTML ="Du har valgt papir.";
+        };
 
 
     </script>

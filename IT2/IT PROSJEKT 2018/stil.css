@@ -1,0 +1,12 @@
+body {
+    background-color: darkseagreen;
+    position:  absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%,-10%);
+
+}
+
+p, h2  {
+    font-family: Gulim;
+}
