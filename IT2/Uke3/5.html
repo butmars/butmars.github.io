@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="tallListe">
+
+</ul>
+
+    <script>
+        let tallListe = document.getElementById("tallListe");
+        let tallrekke = [34,12,54,66,28];
+
+        tallrekke.sort(function(a, b){return a - b});
+
+
+        for(let tall of tallrekke){
+            console.log(tall);
+            tallListe.innerHTML += "<li>" + tall + "</li>";
+        }
+    </script>
+
+</body>
+</html>

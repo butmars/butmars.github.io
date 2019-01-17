@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>oppg2</title>
+</head>
+<body>
+
+<ul id="treListe">
+
+</ul>
+
+<script>
+    let treListe = document.getElementById("treListe");
+    let traer = ["Lønn","Hassel", "Bjørk","Eik","Blodlønn", "Furu", "Gran"];
+
+   traer.splice(3, 1);
+   traer.splice(2, 1 ,"Hengebjørk");
+   traer.splice(4, 2);
+   traer.push("Fjellbjørk", "Dvergbjørk");
+   traer.sort();
+
+
+    for(let tre of traer){
+        console.log(tre);
+        treListe.innerHTML += "<li>" + tre + "</li>";
+    }
+
+</script>
+
+</body>
+</html>

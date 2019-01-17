@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oppg1</title>
+</head>
+<body>
+
+    <ul id="matListe">
+
+    </ul>
+
+        <script>
+         let matListe = document.getElementById("matListe");
+         let matvarer = ["Ost","Paprika","Brød","Kaviar"];
+        matvarer.unshift("Yoghurt");
+        matvarer.pop();
+         matvarer.splice(3, 1,"Knekkebrød");
+
+        for(let mat of matvarer){
+            console.log(mat);
+            matListe.innerHTML += "<li>" + mat + "</li>";
+        }
+
+        </script>
+
+</body>
+</html>

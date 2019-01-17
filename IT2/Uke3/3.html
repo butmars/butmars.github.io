@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>oppg3</title>
+</head>
+<body>
+
+<ul id="ferieListe">
+
+</ul>
+
+<p>Feriebilder</p>
+<img id="bilde1" src="1.jpg" height="525" width="700"/>
+
+<button id="forrige">Forrige</button>
+<button id="neste">Neste</button>
+
+
+<script>
+
+    let ferieListe = document.getElementById("ferieListe");
+    let ferie = ["1.jpg","2.jpg"];
+
+    for(let bilder of ferie){
+        console.log(bilder);
+        ferieListe.innerHTML += "<li>" + bilder + "</li>";
+    }
+
+    const neste = document.getElementById("neste");
+    const forrige = document.getElementById("forrige");
+
+    let bildeListe = ["1.jpg", "2.jpg"];
+    let n = 0;
+
+    neste.onclick = function(){
+        n++;
+        if (n >= bildeListe.length){
+            n = 0;
+        }
+        bilde1.src = bildeListe[n];
+    };
+    forrige.onclick = function(){
+        n--;
+        if (n<0){
+            n = bildeListe.length - 1
+        }
+        bilde1.src = bildeListe[n];
+    };
+
+</script>
+
+</body>
+</html></html>
